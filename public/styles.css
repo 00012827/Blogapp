@@ -1,6 +1,7 @@
 :root {
   font-size: 18px;
   color: firebrick;
+  
 }
 
 * {
@@ -41,4 +42,66 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
+}
+
+.message {
+  font-size: 2rem;
+  max-width: 80%;
+  padding: 100px 0 30px 0;
+
+
+
+}
+
+.featured {
+  display: inline-block;
+  padding: 10px 20px;
+  background: blue;
+  color: yellow;
+}
+
+.form {
+  max-width: 70%;
+}
+
+.input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  font-size: 1.3rem;
+  font-family: inherit;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+
+.btn {
+    background-color: rgb(29, 14, 165);
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    padding: 10px 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 75%;
+}
+
+
+.note-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 60%;
+  align-items: center ;
+  padding: 10px;
+  border-bottom: 2px dotted rgb(33, 206, 17);
+}
+
+.note {
+  font-size: 1.3rem;
+}
+
+.delete {
+  display: inline-block;
+  padding: 5px 10px;
+  background: red;
+  color: rgb(14, 13, 13);
+
 }

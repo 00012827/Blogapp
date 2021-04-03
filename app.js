@@ -9,6 +9,20 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
+app.get('/create', (req, res) => {
+  res.render('create')
+})
+
+const posts = ['Funny posts are here', 'Outstanding title']
+
+app.get('/posts', (req, res) => {
+  res.render('posts', { posts: posts }) 
+})
+
+app.get('/posts/detail', (req,res) => {
+  res.render('detail')
+})
+
 app.listen(5000, err => {
   if (err) console.log(err)
 
