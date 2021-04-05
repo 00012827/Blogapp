@@ -2,14 +2,24 @@ extends layout.pug
 
 block content
   div.container 
-    h1 Create post
+    h1.logo Create post
+
+    if error
+      p.error Error happened! Try one more time
+
+    if success
+      p.success Your post is added succesfully!
 
     form.form(action='/create' method='POST')
-      label Title
-      input.input(type="text" name='title')
-
-      label Description
-      textarea.input(type="text" name="description") 
-
+      label.vision Title
+      input.input(type='text' placeholder='Enter your title' name='title')
+      label.vision  Name 
+      input.input(type='text' placeholder='Name' name='name')
+      label.vision  Surname 
+      input.input(type='text' placeholder='Surname'  name='surname')
+      label.vision  Gmail 
+      input.input(type='text' placeholder='Gmail' name='gmail')
+      label.vision  Description
+      textarea.input(type='text' placeholder='Description' name='description') 
 
       button.btn Create post

@@ -1,10 +1,16 @@
 extends layout.pug 
 
 block content
+
+  if id
+    p.delete-msg The post with id #{ id } is deleted!
+
   div.container
     h1 All posts
 
     each post in posts
       div.note-wrapper
-        a.note(href='/posts/detail')= post 
-        a.delete(href='#') delete
+        a.note(href=`/posts/${ post.id }`) #{ post.title }
+        if post.draft
+          a.delete(href=`/posts/${ post.id }/delete`) delete
+          a.activate(href=`/posts/${ post.id }/activate`) activate

@@ -1,6 +1,7 @@
 :root {
   font-size: 18px;
-  color: firebrick;
+  color: #1e2625;
+  background-color: #fbc6d0;
   
 }
 
@@ -26,7 +27,7 @@ a {
 }
 
 a:hover {
-    color: lightslategray;
+    color: blue;
 
 }
 
@@ -54,35 +55,67 @@ a:hover {
 }
 
 .featured {
-  display: inline-block;
-  padding: 10px 20px;
-  background: blue;
-  color: yellow;
+  width: 300px;
+  height: 100px;
+  border: none;
+  color: white;
+  background-color:#95bddc;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0 #c2d1e5;
+  transition: ease-out 0.3s;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  outline: none;
+  margin-top: 150px;
 }
+
+.featured:hover {
+   box-shadow: inset 300px 0 0 0 white;
+  cursor: pointer;
+  color: #95bddc;
+}
+
 
 .form {
   max-width: 70%;
+  margin-left: 15%;
 }
 
+.form textarea {
+  background-color: rgb(225, 225, 236);
+}
+.form input {
+  background-color: rgb(225, 225, 236);
+}
 .input {
   width: 100%;
   display: block;
-  padding: 10px;
-  font-size: 1.3rem;
+  padding: 5px;
+  font-size: 1.2rem;
   font-family: inherit;
-  border: 1px solid red;
+  border: 1px solid rgb(5, 38, 148);
   margin-bottom: 20px;
 }
 
 .btn {
-    background-color: rgb(29, 14, 165);
-    color: white;
-    font-size: 1.3rem;
+    width: 150px;
+    height: 40px;
     border: none;
-    padding: 10px 25px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 75%;
+    color: white;
+    background-color: rgb(34, 184, 29);
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 rgb(50, 135, 150);
+    transition: ease-out 0.3s;
+    font-size: 1.5rem;
+    outline: none;
+    border-radius: 25px;
 }
+.btn:hover {
+    box-shadow: inset 300px 0 0 0 rgb(3, 121, 115);
+    cursor: pointer;
+    color: black;
+}
+
 
 
 .note-wrapper {
@@ -102,6 +135,77 @@ a:hover {
   display: inline-block;
   padding: 5px 10px;
   background: red;
-  color: rgb(14, 13, 13);
+  color: white;
 
+}
+
+.activate {
+  display: inline-block;
+  padding: 5px 10px;
+  background: rgb(7, 188, 201);
+  color: white;
+}
+
+.error {
+  display: inline-block;
+  padding: 10px;
+  border: 2px dotted red;
+  font-size: 1.2rem;
+  color: red;
+}
+
+
+
+
+.success {
+  display: inline-block;
+  padding: 10px;
+  border: 2px dotted rgb(32, 77, 201);
+  font-size: 1.2rem;
+  color: rgb(70, 204, 164);
+}
+
+.logo {
+  color: black;
+}
+
+.delete-msg {
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: red;
+  margin-left: 12%;
+  border: 1px solid black;
+  margin-top: 15px;
+  border-radius: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: lightseagreen;
+}
+.draft {
+  display: block;
+  width: 80px;
+  height: 40px;
+  border: none;
+  color: white;
+  background-color: #95bddc;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0  #c2d1e5;
+  transition: ease-out 0.3s;
+  font-size: 1.5rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  outline: none;
+  margin-top: 30px;
+  
+}
+
+.draft:hover {
+  box-shadow: inset 300px 0 0 0 white;
+  cursor: pointer;
+  color: #95bddc;
+}
+
+.vision {
+  font-size: 20px;
+  color: darkorange;
+  font-family: cursive;
 }
