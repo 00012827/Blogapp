@@ -209,3 +209,13 @@ a:hover {
   color: darkorange;
   font-family: cursive;
 }
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: blue;
+   background-color: white;
+   text-align: center;
+   
+}

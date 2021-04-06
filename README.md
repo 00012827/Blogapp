@@ -6,7 +6,7 @@ In order to run this application you should follow the list step by step that is
 
 1. Clone this repositery
 ```bash
-git clone [repositery link]
+git clone https://github.com/00012827/Blogapp.git
 
 ```
 
@@ -26,4 +26,4 @@ node app
 - pug.js
 
 ### Web application repository on github
-[link to github]
+[link to github repo](https://github.com/00012827/Blogapp.git)
