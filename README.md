@@ -27,3 +27,6 @@ node app
 
 ### Web application repository on github
 [link to github repo](https://github.com/00012827/Blogapp.git)
+
+### Web application URL on glitch 
+[link to URL on glitch](https://zircon-yummy-sundae.glitch.me/)
